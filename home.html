@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <h1 align="center">~*~*~*~VENDING MACHINE~*~*~*~</h1>
+</head>
+
+<body>
+
+    <!-- <div class="container"> -->
+
+        <div class="outside-box">
+            <div class="container">
+            <!--column 1 all items -->
+            <div id="itemDivs" class="col-md-7"> </div>
+
+
+            <!-- 2nd column Menu items -->
+            <div id ="menu" class ="col-xs-3">
+                        <!-- Money Box -->
+                        <div id="moneyInDiv" class="flex-box-other mr-auto p-2">
+                            <h5 align="center"> ~*~ Total $ In ~*~</h5>
+                            <div class="flex-box-money">
+                                <div class="moneyBox"> </div>
+                            </div>
+                            <div class="button">
+                                <button type="button" value="1.00" id="dollar-button" class="btn btn-default">
+                                    Add Dollar</button>
+                                <button type="button" value=".25" id="quarter-button" class="btn btn-default">Add Quarter </button>
+                            </div>
+                            <div class="button">
+                                <button type="button" value=".10" id="dime-button" class="btn btn-default">Add Dime</button>
+                                <button type="button" value=".05" id="nickel-button" class="btn btn-default">Add Nickel </button>
+                            </div>
+                        </div>
+
+                    <!-- Messages box -->
+                    <div id="messagesDiv" class="flex-box-other mr-auto p-2">
+                        <h5 align="center"> ~*~ Messages ~*~ </h5>
+                        <input id="displayMessage" type="text" class="form-control" readonly/>
+                        <label for="itemDisplay" class="control-label" style="display: inline-block; max-width: 30%"></label>
+                        <div>
+                            <input id="itemDisplay" type="text" class="form-control" style="display: inline-block; max-width: 70%" readonly/>
+                        </div>
+                        <div class="purchaseButton">
+                            <button id="purchaseButton" type="button" class="btn btn-default">Make Purchase</button>
+                        </div>
+                    </div>
+
+                <!-- Change -->
+                <div id="changeDiv" class="flex-box-other mr-auto p-2">
+                    <h5 align="center">~*~ Change ~*~</h5>
+                    <textarea id="changeDisplay" type="textarea" class="form-control" rows="6" readonly></textarea>
+                    <button id="changeButton" type="button" class="btn btn-default">Return Change</button>
+                </div>
+            </div>
+    </div>
+</div>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
